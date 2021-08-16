@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" media="screen and (min-width: 950px)" href="stylesheets/desktop_media.css">
+        <link rel="stylesheet" media="screen and (max-width: 950px)" href="stylesheets/mobile_media.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="javascript/start.js"></script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    </head>
+
+    <!-- Create a header that changes its statement based on the time of day
+    Like Ohayo Gozaimas for the morning in Japanese characters. -->
+
+    <body>
+        <p id="testBox"></p>
+        <div id="welcomeText">
+            <h1>Welcome back, 先生</h1>
+            <p id="greeting"></p>
+            <span class="blinking-cursor">|</span>
+        </div>
+
+        <img id="headerImage" src="images/totoro.gif" onclick="imageClick()"> 
+        
+        <form id="search" method="get" action="https://www.google.com/search">
+            <input type="text" name="q" size="31" placeholder="Search">
+        </form>
+
+        <div id="flexbox">
+            <div id="social">
+                <h3>Social</h3><hr>
+                <a href="http://reddit.com">Reddit</a>
+                <br>
+                <a href="http://twitter.com">Twitter</a>
+                <br>
+            </div>
+            <div id="entertainment">
+                <h3>Entertainment</h3><hr>
+                <a href="http://youtube.com">Youtube</a>
+                <br>
+                <a href="http://netflix.com">Netflix</a>
+                <br>
+                <a href="http://beta.crunchyroll.com">Crunchyroll</a>
+                <br>
+                <a href="http://twitch.tv">Twitch</a>
+            </div>
+            <div id="reddit">
+                <h3>Reddit</h3><hr>
+                <a href="http://reddit.com/r/unixporn">Unixporn</a>
+                <br>
+                <a href="http://reddit.com/r/linuxmemes">Linux Memes</a>
+                <br>
+            </div>
+            <div id="development">
+                <h3>Development</h3><hr>
+                <a href="http://github.com">Github</a>
+                <br>
+                <a href="http://stackoverflow.com">Stack</a>
+                <br>
+            </div>
+        </div>
+    </body>
+</html>
